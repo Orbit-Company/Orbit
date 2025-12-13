@@ -4,13 +4,16 @@ import java.io.File
 import kotlin.system.exitProcess
 
 fun checkConfigFile(): File {
-    val stream = Thread.currentThread().contextClassLoader.getResourceAsStream("orbit.conf")
-        ?: run {
-            println("O arquivo 'orbit.conf' não foi encontrado nos resources.")
-            exitProcess(1)
-        }
+    val path = System.getenv("CONF")
+        ?: System.getProperty("conf")
+        ?: "./orbit.conf"
 
-    val temp = File.createTempFile("orbit", ".conf")
-    temp.outputStream().use { stream.copyTo(it) }
-    return temp
+    val configFile = File(path)
+
+    if (!configFile.exists()) {
+        println("O arquivo 'orbit.conf' não foi encontrado em: ${configFile.absolutePath}")
+        exitProcess(1)
+    }
+
+    return configFile
 }
