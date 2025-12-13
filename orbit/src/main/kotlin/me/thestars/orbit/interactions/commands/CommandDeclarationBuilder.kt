@@ -3,7 +3,7 @@ package me.thestars.orbit.interactions.commands
 import dev.minn.jda.ktx.interactions.commands.Command
 import dev.minn.jda.ktx.interactions.commands.Subcommand
 import dev.minn.jda.ktx.interactions.commands.SubcommandGroup
-import me.thestars.orbit.utils.OrbitLocale
+import me.thestars.orbit.utils.common.OrbitLocale
 import net.dv8tion.jda.api.Permission
 import net.dv8tion.jda.api.interactions.DiscordLocale
 import net.dv8tion.jda.api.interactions.IntegrationType

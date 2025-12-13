@@ -6,7 +6,7 @@ import dev.minn.jda.ktx.messages.MessageCreateBuilder
 import dev.minn.jda.ktx.messages.MessageEditBuilder
 import me.thestars.orbit.OrbitInstance
 import me.thestars.orbit.interactions.commands.CommandContext
-import me.thestars.orbit.utils.OrbitLocale
+import me.thestars.orbit.utils.common.OrbitLocale
 import mu.KotlinLogging
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent

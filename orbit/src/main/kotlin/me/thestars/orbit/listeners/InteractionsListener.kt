@@ -8,7 +8,7 @@ import me.thestars.orbit.OrbitInstance
 import me.thestars.orbit.interactions.InteractionCommandContext
 import me.thestars.orbit.interactions.components.ComponentId
 import me.thestars.orbit.interactions.pretty
-import me.thestars.orbit.utils.OrbitEmotes
+import me.thestars.orbit.utils.common.OrbitEmotes
 import mu.KotlinLogging
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent

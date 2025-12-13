@@ -1,4 +1,4 @@
-package me.thestars.orbit.utils
+package me.thestars.orbit.utils.common
 
 import java.io.File
 import kotlin.system.exitProcess
@@ -6,7 +6,7 @@ import kotlin.system.exitProcess
 fun checkConfigFile(): File {
     val path = System.getenv("CONF")
         ?: System.getProperty("conf")
-        ?: "./orbit.conf"
+        ?: "orbit.conf"
 
     val configFile = File(path)
 

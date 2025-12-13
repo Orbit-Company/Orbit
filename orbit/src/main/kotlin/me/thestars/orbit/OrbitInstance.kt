@@ -16,6 +16,7 @@ import me.thestars.orbit.database.DatabaseService
 import me.thestars.orbit.database.PostgresConfig
 import me.thestars.orbit.interactions.CommandManager
 import me.thestars.orbit.interactions.components.ComponentManager
+import me.thestars.orbit.listeners.GuildsListener
 import me.thestars.orbit.listeners.InteractionsListener
 import me.thestars.orbit.utils.TasksUtils
 import me.thestars.orbit.utils.serializable.OrbitConfig
@@ -93,7 +94,8 @@ class OrbitInstance(
             }
         }
             .addEventListeners(
-                InteractionsListener(this)
+                InteractionsListener(this),
+                GuildsListener(this)
             )
             .setAutoReconnect(true)
             .setStatus(OnlineStatus.ONLINE)

@@ -2,10 +2,10 @@ package me.thestars.orbit
 
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.ExperimentalSerializationApi
-import me.thestars.orbit.utils.Constants
+import me.thestars.orbit.utils.common.Constants
 import me.thestars.orbit.utils.HoconUtils.decodeFromString
 import me.thestars.orbit.utils.HostnameUtils
-import me.thestars.orbit.utils.checkConfigFile
+import me.thestars.orbit.utils.common.checkConfigFile
 import me.thestars.orbit.utils.installCoroutinesDebugProbes
 import me.thestars.orbit.utils.serializable.OrbitConfig
 import mu.KotlinLogging

@@ -4,7 +4,7 @@ import com.github.benmanes.caffeine.cache.Caffeine
 import me.thestars.orbit.OrbitInstance
 import me.thestars.orbit.interactions.commands.CommandContext
 import me.thestars.orbit.interactions.pretty
-import me.thestars.orbit.utils.OrbitEmotes
+import me.thestars.orbit.utils.common.OrbitEmotes
 import net.dv8tion.jda.api.components.buttons.Button
 import net.dv8tion.jda.api.components.buttons.ButtonStyle
 import net.dv8tion.jda.api.components.selections.EntitySelectMenu

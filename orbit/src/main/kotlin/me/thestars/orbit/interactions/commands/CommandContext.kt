@@ -2,7 +2,7 @@ package me.thestars.orbit.interactions.commands
 
 import dev.minn.jda.ktx.messages.InlineMessage
 import me.thestars.orbit.OrbitInstance
-import me.thestars.orbit.utils.OrbitLocale
+import me.thestars.orbit.utils.common.OrbitLocale
 import net.dv8tion.jda.api.JDA
 import net.dv8tion.jda.api.entities.Guild
 import net.dv8tion.jda.api.entities.User

@@ -6,7 +6,7 @@ import me.thestars.orbit.interactions.commands.CommandDeclarationWrapper
 import me.thestars.orbit.interactions.commands.CommandUnleashed
 import me.thestars.orbit.interactions.vanilla.common.declarations.OrbitCommand
 import me.thestars.orbit.utils.ClusterUtils
-import me.thestars.orbit.utils.Constants
+import me.thestars.orbit.utils.common.Constants
 import mu.KotlinLogging
 import net.dv8tion.jda.api.interactions.commands.Command
 
