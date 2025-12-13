@@ -1,9 +1,13 @@
 name: Continuous Integration
 
+permissions:
+  contents: read
+  packages: write
+
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-and-deploy:
