@@ -2,7 +2,7 @@ commands:
   command:
     orbit:
       name: "orbit"
-      description: "Comandos da categoria do Orbit"
+      description: "Commands from the Orbit category"
       ping:
         name: "ping"
-        description: "ping"
+        description: "[Common] Check my latency with Discord Gateway."

@@ -41,6 +41,19 @@ class CommandManager(private val instance: OrbitInstance) {
         return null
     }
 
+    suspend fun wipeAllDiscordCommands() {
+        instance.shardManager.shards.forEach { shard ->
+            shard.updateCommands().await()
+            logger.warn { "🔥 Global commands wiped on shard ${shard.shardInfo.shardId}" }
+        }
+
+        instance.shardManager.shards.forEach { shard ->
+            shard.guilds.forEach { guild ->
+                guild.updateCommands().await()
+                logger.warn { "🔥 Guild commands wiped on ${guild.name} (${guild.id})" }
+            }
+        }
+    }
 
     private fun register(command: CommandDeclarationWrapper) {
         commands.add(command)

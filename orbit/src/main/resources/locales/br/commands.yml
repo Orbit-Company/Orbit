@@ -5,4 +5,4 @@ commands:
       description: "Comandos da categoria do Orbit"
       ping:
         name: "ping"
-        description: "ping"
+        description: "[Comum] Veja minha latência com a Gateway do Discord."
