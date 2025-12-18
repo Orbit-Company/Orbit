@@ -1,0 +1,16 @@
+generics:
+  error:
+    notInGuild: "{0}, this command can only be used in a server. Please try again in a server."
+    notUserPermissions: "{0}, unfortunately I cannot continue executing this command because you do not have the required permissions `[{1}]`."
+    connectionAsExist: "{0}, unfortunately the connection `{1}` is already connected in this channel. Please try another channel."
+    connectionNotExists: "{0}, the connection `{1}` does not exist in my database. If you want, you can create it using the `/connection create` command."
+    limitConnections: "{0}, the server has already reached the limit of `{1}` connections."
+
+ping:
+  response: "🏓 **Pong!** (shard: {0}) My latency is `{1}ms`!\n📡 **Shards:** `{2}/{3}`\n🛰️ **Cluster {4}:** `{5}`"
+
+connections:
+  create:
+    response: "{0}, to create a connection go to the website: https://orbitbot.website/guilds/{1}/connections"
+  join:
+    response: "{0}, congratulations! You have just successfully connected to the connection `{1}`!"

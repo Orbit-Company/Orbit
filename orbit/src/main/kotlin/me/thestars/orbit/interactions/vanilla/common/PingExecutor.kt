@@ -13,7 +13,7 @@ class PingExecutor : UnleashedCommandExecutor() {
 
         context.reply {
             content =
-                "🏓 **Pong!** (shard: $currentShardId) Minha latência está em `${gatewayPing}ms`!\n📡 **Shards:** `$currentShardId/$totalShards`\n🛰️ **Cluster $currentClusterId:** `$currentClusterName`"
+                context.locale["ping.response", currentShardId.toString(), gatewayPing.toString(), currentShardId.toString(), totalShards.toString(), currentClusterId.toString(), currentClusterName]
         }
     }
 }

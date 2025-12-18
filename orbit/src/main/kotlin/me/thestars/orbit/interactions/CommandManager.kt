@@ -5,6 +5,7 @@ import me.thestars.orbit.OrbitInstance
 import me.thestars.orbit.interactions.commands.CommandDeclarationWrapper
 import me.thestars.orbit.interactions.commands.CommandUnleashed
 import me.thestars.orbit.interactions.vanilla.common.declarations.OrbitCommand
+import me.thestars.orbit.interactions.vanilla.connections.declarations.ConnectionsCommand
 import me.thestars.orbit.utils.ClusterUtils
 import me.thestars.orbit.utils.common.Constants
 import mu.KotlinLogging
@@ -87,5 +88,6 @@ class CommandManager(private val instance: OrbitInstance) {
 
     init {
         register(OrbitCommand())
+        register(ConnectionsCommand())
     }
 }
