@@ -5,4 +5,20 @@ commands:
       description: "Commands from the Orbit category"
       ping:
         name: "ping"
-        description: "[Common] Check my latency with Discord Gateway."
+        description: "[Common] View my latency with the Discord Gateway."
+    connections:
+      name: "connections"
+      description: "Commands from the Connections category"
+      create:
+        name: "create"
+        description: "[Connections] Create a connection to use on your servers and share with friends."
+      join:
+        name: "connect"
+        description: "[Connections] Join a connection and connect it to a channel on your server."
+        options:
+          connection:
+            name: "connection"
+            description: "enter the name of the connection you want to add to your server"
+          channel:
+            name: "channel"
+            description: "enter the ID or mention the channel where you want to add the connection"
