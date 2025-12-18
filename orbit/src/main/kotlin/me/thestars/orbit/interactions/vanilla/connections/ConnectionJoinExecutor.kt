@@ -31,8 +31,8 @@ class ConnectionJoinExecutor : UnleashedCommandExecutor() {
             return
         }
 
-        val userMemberPermissions = context.member.hasPermission(Permission.ADMINISTRATOR) ||
-                context.member.hasPermission(Permission.MANAGE_GUILD_EXPRESSIONS)
+        val userMemberPermissions = context.member!!.hasPermission(Permission.ADMINISTRATOR) ||
+                context.member!!.hasPermission(Permission.MANAGE_GUILD_EXPRESSIONS)
 
         if (!userMemberPermissions) {
             context.reply(ephemeral = true) {

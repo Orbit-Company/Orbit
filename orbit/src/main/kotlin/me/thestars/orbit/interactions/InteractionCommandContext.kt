@@ -8,6 +8,7 @@ import me.thestars.orbit.OrbitInstance
 import me.thestars.orbit.interactions.commands.CommandContext
 import me.thestars.orbit.utils.common.OrbitLocale
 import mu.KotlinLogging
+import net.dv8tion.jda.api.entities.Member
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
@@ -26,6 +27,7 @@ class InteractionCommandContext(
     override val locale = OrbitLocale("pt-br")
     override val guild = event.guild
     override val user = event.user
+    override val member = event.member
 
     private val logger = KotlinLogging.logger { }
 

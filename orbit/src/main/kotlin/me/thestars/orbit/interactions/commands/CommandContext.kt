@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.JDA
 import net.dv8tion.jda.api.entities.Guild
 import net.dv8tion.jda.api.entities.Member
 import net.dv8tion.jda.api.entities.User
-import net.dv8tion.jda.api.events.GenericEvent
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent
 import net.dv8tion.jda.api.interactions.InteractionHook
 import net.dv8tion.jda.api.interactions.modals.Modal
@@ -20,7 +19,7 @@ interface CommandContext {
     val orbit: OrbitInstance
     val locale: OrbitLocale
     val event: GenericInteractionCreateEvent
-    val member: Member
+    val member: Member?
 
     suspend fun reply(ephemeral: Boolean = false, block: InlineMessage<*>.() -> Unit)
     suspend fun defer(ephemeral: Boolean = false): InteractionHook?
