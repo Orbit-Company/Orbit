@@ -87,6 +87,12 @@ Se você gosta do Orbit e quer apoiar o desenvolvimento:
 
 ---
 
+## ❤️ Créditos e Inspirações 
+- MrPowerGamer - Loritta Bot: [Repositório](https://github.com/LorittaBot/Loritta)
+- Win - Foxy Bot: [Repositório](https://github.com/FoxyTheBot/Foxy)
+
+---
+
 <p align="center">
 Feito com ❤️ por <a href="https://github.com/0xviny">0xviny</a>
 </p>
