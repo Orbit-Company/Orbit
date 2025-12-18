@@ -15,10 +15,10 @@ commands:
       join:
         name: "conectar"
         description: "[Conexões] Entre em uma conexão e conecte ela em um canal do seu servidor."
-        options:
-          connection:
-            name: "conexão"
-            description: "coloque o nome da conexão que você quer adicionar ao seu servidor"
-          channel:
-            name: "canal"
-            description: "coloque o ID ou mencione o canal que você quer adicionar a conexão"
+      options:
+        connection:
+          name: "conexão"
+          description: "coloque o nome da conexão que você quer adicionar ao seu servidor"
+        channel:
+          name: "canal"
+          description: "coloque o ID ou mencione o canal que você quer adicionar a conexão"
