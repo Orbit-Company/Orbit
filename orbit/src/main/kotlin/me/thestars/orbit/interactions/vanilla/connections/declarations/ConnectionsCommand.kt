@@ -17,8 +17,8 @@ class ConnectionsCommand : CommandDeclarationWrapper {
         }
 
         subCommand("join") {
-            addOption(opt(OptionType.STRING, "connection", true))
-            addOption(opt(OptionType.CHANNEL, "channel", false))
+            addOption(opt(OptionType.STRING, "connection", true), isSubCommand = true)
+            addOption(opt(OptionType.CHANNEL, "channel", false), isSubCommand = true)
 
             executor = ConnectionJoinExecutor()
         }

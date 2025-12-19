@@ -63,11 +63,6 @@ class CommandManager(private val instance: OrbitInstance) {
     suspend fun handle(): MutableList<Command> {
         val allCommands = mutableListOf<Command>()
 
-        val supportServerShardId = ClusterUtils.getShardIdFromGuildId(
-            Constants.SUPPORT_SERVER_ID,
-            instance.config.discord.totalShards
-        )
-
         instance.shardManager.shards.forEach { shard ->
             val action = shard.updateCommands()
 

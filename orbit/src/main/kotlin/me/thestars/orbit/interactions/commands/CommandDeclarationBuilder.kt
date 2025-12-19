@@ -5,13 +5,13 @@ import dev.minn.jda.ktx.interactions.commands.Subcommand
 import dev.minn.jda.ktx.interactions.commands.SubcommandGroup
 import me.thestars.orbit.utils.common.OrbitLocale
 import net.dv8tion.jda.api.Permission
-import net.dv8tion.jda.api.interactions.DiscordLocale
 import net.dv8tion.jda.api.interactions.IntegrationType
 import net.dv8tion.jda.api.interactions.InteractionContextType
 import net.dv8tion.jda.api.interactions.commands.DefaultMemberPermissions
 import net.dv8tion.jda.api.interactions.commands.OptionType
 import net.dv8tion.jda.api.interactions.commands.build.OptionData
 import net.dv8tion.jda.api.interactions.commands.build.SlashCommandData
+import net.dv8tion.jda.api.interactions.DiscordLocale
 
 class CommandDeclarationBuilder(
     val name: String,
@@ -26,13 +26,12 @@ class CommandDeclarationBuilder(
     private val subCommandGroups = mutableListOf<CommandGroupBuilder>()
     private val permissions = mutableListOf<Permission>()
     private val commandOptions = mutableListOf<OptionData>()
-
     private val enUsLocale = OrbitLocale("en-us")
     private val ptBrLocale = OrbitLocale("pt-br")
 
     fun subCommand(
         name: String,
-        description: String = "placeholder",
+        description: String = "placeholderDescription",
         integrationType: List<IntegrationType> = listOf(IntegrationType.GUILD_INSTALL),
         interactionContexts: List<InteractionContextType> = listOf(InteractionContextType.GUILD),
         block: CommandDeclarationBuilder.() -> Unit
@@ -44,7 +43,6 @@ class CommandDeclarationBuilder(
             integrationType,
             interactionContexts
         )
-
         subCommand.baseName = baseName ?: this.name
         subCommand.block()
         subCommands.add(subCommand)
@@ -56,12 +54,11 @@ class CommandDeclarationBuilder(
 
     fun subCommandGroup(
         name: String,
-        description: String,
+        description: String = "placeholderDescription",
         block: CommandGroupBuilder.() -> Unit
     ) {
         val group = CommandGroupBuilder(name, description)
         group.block()
-
         this.baseName = baseName
         subCommandGroups.add(group)
     }
@@ -89,33 +86,20 @@ class CommandDeclarationBuilder(
     ) {
         option.forEach { op ->
             if (isSubCommand) {
-                op.setNameLocalizations(
-                    mapOf(
-                        DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.${baseName}.${name}.options.${op.name}.name"],
-                        DiscordLocale.ENGLISH_US to enUsLocale["commands.command.${baseName}.${name}.options.${op.name}.name"]
-                    )
-                )
                 op.setDescriptionLocalizations(
                     mapOf(
-                        DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.${baseName}.${name}.options.${op.name}.description"],
-                        DiscordLocale.ENGLISH_US to enUsLocale["commands.command.${baseName}.${name}.options.${op.name}.description"]
+                        DiscordLocale.ENGLISH_US to enUsLocale["commands.command.${baseName}.${name}.options.${op.name}.description"],
+                        DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.${baseName}.${name}.options.${op.name}.description"]
                     )
                 )
             } else {
-                op.setNameLocalizations(
-                    mapOf(
-                        DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.$baseName.options.${op.name}.name"],
-                        DiscordLocale.ENGLISH_US to enUsLocale["commands.command.$baseName.options.${op.name}.name"]
-                    )
-                )
                 op.setDescriptionLocalizations(
                     mapOf(
-                        DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.$baseName.options.${op.name}.description"],
-                        DiscordLocale.ENGLISH_US to enUsLocale["commands.command.$baseName.options.${op.name}.description"]
+                        DiscordLocale.ENGLISH_US to enUsLocale["commands.command.$baseName.options.${op.name}.description"],
+                        DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.$baseName.options.${op.name}.description"]
                     )
                 )
             }
-
             commandOptions.add(op)
         }
     }
@@ -130,23 +114,16 @@ class CommandDeclarationBuilder(
 
     fun build(): SlashCommandData {
         val commandData = Command(name, description) {
-            setNameLocalizations(
-                mapOf(
-                    DiscordLocale.ENGLISH_US to enUsLocale["commands.command.$name.name"],
-                    DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.$name.name"]
-                )
-            )
-
             this.setIntegrationTypes(integrationType[0], *integrationType.drop(1).toTypedArray())
             this.setContexts(interactionContexts[0], *interactionContexts.drop(1).toTypedArray())
 
             setDescriptionLocalizations(
                 mapOf(
-                    DiscordLocale.PORTUGUESE_BRAZILIAN to buildDescription(
-                        ptBrLocale["commands.command.$name.description"]
-                    ),
                     DiscordLocale.ENGLISH_US to buildDescription(
                         enUsLocale["commands.command.$name.description"]
+                    ),
+                    DiscordLocale.PORTUGUESE_BRAZILIAN to buildDescription(
+                        ptBrLocale["commands.command.$name.description"]
                     )
                 )
             )
@@ -156,13 +133,6 @@ class CommandDeclarationBuilder(
             subCommands.forEach { subCmd ->
                 addSubcommands(
                     Subcommand(subCmd.name, subCmd.description) {
-                        setNameLocalizations(
-                            mapOf(
-                                DiscordLocale.ENGLISH_US to enUsLocale["commands.command.${baseName}.${subCmd.name}.name"],
-                                DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.${baseName}.${subCmd.name}.name"]
-                            )
-                        )
-
                         setDescriptionLocalizations(
                             mapOf(
                                 DiscordLocale.ENGLISH_US to buildDescription(
@@ -185,13 +155,6 @@ class CommandDeclarationBuilder(
                         it.subCommands.forEach { subCommand ->
                             addSubcommands(
                                 Subcommand(subCommand.name, subCommand.description) {
-                                    setNameLocalizations(
-                                        mapOf(
-                                            DiscordLocale.ENGLISH_US to enUsLocale["commands.command.${baseName}.${it.name}.${subCommand.name}.name"],
-                                            DiscordLocale.PORTUGUESE_BRAZILIAN to ptBrLocale["commands.command.${baseName}.${it.name}.${subCommand.name}.name"]
-                                        )
-                                    )
-
                                     setDescriptionLocalizations(
                                         mapOf(
                                             DiscordLocale.ENGLISH_US to buildDescription(

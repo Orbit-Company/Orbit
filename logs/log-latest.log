@@ -1,27 +1,26 @@
-2025-12-13 23:50:58.007 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
-2025-12-13 23:50:58.129 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
-2025-12-13 23:50:59.554 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60baef24
-2025-12-13 23:50:59.556 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
-2025-12-13 23:51:00.704 main @coroutine#1                  ShardManager    INFO   Login Successful!
-2025-12-13 23:51:01.421 main @coroutine#1                  CommandManager  WARN   🔥 Global commands wiped on shard 0
-2025-12-13 23:51:01.451 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
-2025-12-13 23:51:01.952 main @coroutine#1                  CommandManager  INFO   1 commands registered on shard #0
-2025-12-13 23:51:02.076 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
-2025-12-13 23:51:02.078 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
-2025-12-13 23:53:27.019 MessageExecutor [0] @Slash Command InteractionComm WARN   Failed to defer command! It was deleted? 10062: Failed to acknowledge this interaction, this can be due to 2 reasons:
-1. This interaction took longer than 3 seconds to be acknowledged, see https://jda.wiki/using-jda/troubleshooting/#the-interaction-took-longer-than-3-seconds-to-be-acknowledged
-2. This interaction could have been acknowledged by another process running for the same bot
-You can confirm this by checking if your bot replied, or the three dots in a button disappeared without saying 'This interaction failed', or you see '[Bot] is thinking...' for more than 3 seconds.
-To resolve this, try stopping all current processes for the bot that could be responsible, or resetting your bot token.
-You can reset your token at https://discord.com/developers/applications/1385726617879580764/bot
-2025-12-13 23:53:27.049 MessageExecutor [0] @Slash Command InteractionsLis INFO   0xviny (928411302706151445) executed orbit ping in 🚀  inOrbit - Centro de Conexões (1210032940709318678) in 507ms
-2025-12-13 23:54:20.790 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
-2025-12-13 23:54:20.985 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
-2025-12-13 23:54:21.883 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
-2025-12-13 23:54:21.898 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
-2025-12-13 23:54:23.759 main @coroutine#1                  ShardManager    INFO   Login Successful!
-2025-12-13 23:54:24.523 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
-2025-12-13 23:54:24.683 main @coroutine#1                  CommandManager  WARN   🔥 Global commands wiped on shard 0
-2025-12-13 23:54:25.592 main @coroutine#1                  CommandManager  INFO   1 commands registered on shard #0
-2025-12-13 23:54:25.661 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
-2025-12-13 23:54:25.676 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 00:06:58.953 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 00:06:59.059 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 00:06:59.981 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60baef24
+2025-12-19 00:06:59.984 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 00:07:00.807 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 00:07:01.386 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 00:07:01.597 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 00:07:01.827 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 00:07:01.829 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 00:17:34.963 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 00:17:35.047 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 00:17:35.963 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 00:17:35.965 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 00:17:36.849 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 00:17:37.408 JDA [0 / 1] MainWS-WriteThread     WebSocketClient INFO   Connected to WebSocket
+2025-12-19 00:17:37.883 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 00:17:37.884 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 00:19:21.944 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 00:19:22.043 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 00:19:22.559 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 00:19:22.563 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 00:19:23.462 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 00:19:23.933 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 00:19:24.204 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 00:19:24.385 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 00:19:24.387 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
