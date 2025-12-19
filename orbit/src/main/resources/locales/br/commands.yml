@@ -7,7 +7,7 @@ commands:
         name: "ping"
         description: "[Comum] Veja minha latência com a Gateway do Discord."
     connections:
-      name: "conexões"
+      name: "conexoes"
       description: "Comandos da categoria de Conexões"
       create:
         name: "criar"
@@ -17,7 +17,7 @@ commands:
         description: "[Conexões] Entre em uma conexão e conecte ela em um canal do seu servidor."
       options:
         connection:
-          name: "conexão"
+          name: "conexao"
           description: "coloque o nome da conexão que você quer adicionar ao seu servidor"
         channel:
           name: "canal"

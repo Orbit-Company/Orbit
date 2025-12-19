@@ -15,6 +15,7 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent
 import net.dv8tion.jda.api.events.interaction.component.EntitySelectInteractionEvent
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent
+import net.dv8tion.jda.api.interactions.DiscordLocale
 import net.dv8tion.jda.api.interactions.InteractionHook
 import net.dv8tion.jda.api.interactions.commands.OptionType
 import net.dv8tion.jda.api.interactions.modals.Modal
@@ -23,8 +24,14 @@ class InteractionCommandContext(
     override val event: GenericInteractionCreateEvent,
     override val orbit: OrbitInstance
 ) : CommandContext {
+    val userLocale = when (event.userLocale) {
+        DiscordLocale.PORTUGUESE_BRAZILIAN -> "pt-br"
+        DiscordLocale.ENGLISH_US -> "en-us"
+        else -> "pt-br"
+    }
+
     override val jda = event.jda
-    override val locale = OrbitLocale("pt-br")
+    override val locale = OrbitLocale(userLocale)
     override val guild = event.guild
     override val user = event.user
     override val member = event.member
