@@ -16,18 +16,18 @@ class OrbitLocale(var locale: String) {
         get() = locale
 
     operator fun get(key: String, vararg placeholder: String): String {
-        locale = when (locale) {
+        val normalizedLocale = when (locale) {
             "pt-br" -> "br"
             "en-us" -> "us"
             else -> "br"
         }
 
         val resourcePaths = listOf(
-            "$PATH/$locale/general.yml",
-            "$PATH/$locale/commands.yml",
-            "$PATH/$locale/components.yml",
-            "$PATH/$locale/modules.yml",
-            "$PATH/$locale/utils.yml"
+            "$PATH/$normalizedLocale/general.yml",
+            "$PATH/$normalizedLocale/commands.yml",
+            "$PATH/$normalizedLocale/components.yml",
+            "$PATH/$normalizedLocale/modules.yml",
+            "$PATH/$normalizedLocale/utils.yml"
         )
 
         for (resourcePath in resourcePaths) {

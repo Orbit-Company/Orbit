@@ -24,3 +24,151 @@
 2025-12-19 00:19:24.204 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
 2025-12-19 00:19:24.385 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
 2025-12-19 00:19:24.387 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 00:34:44.920 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 00:34:45.043 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 00:34:46.148 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 00:34:46.157 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 00:34:47.613 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 00:34:48.439 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 00:34:48.788 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 00:34:48.809 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 00:34:48.821 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:05:35.754 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:05:35.920 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:05:36.771 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:05:36.776 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:05:38.471 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:05:39.018 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:05:39.798 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:05:39.961 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:05:39.966 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:12:54.999 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:12:55.086 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:12:55.978 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:12:55.985 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:12:57.441 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:12:57.976 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:12:58.382 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:12:58.675 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:12:58.682 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:19:30.751 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:19:30.866 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:19:31.871 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:19:31.874 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:19:33.069 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:19:33.623 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:19:33.948 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:19:34.179 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:19:34.181 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:23:33.483 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:23:33.716 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:23:34.447 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:23:34.454 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:23:36.718 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:23:38.073 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:23:38.093 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:23:38.905 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:23:38.909 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:28:48.054 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:28:48.141 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:28:48.991 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:28:48.996 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:28:49.880 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:28:50.476 JDA [0 / 1] MainWS-WriteThread     WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:28:50.848 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:28:50.891 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:28:50.897 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:43:41.433 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:43:41.580 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:43:42.952 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:43:42.954 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:43:44.030 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:43:44.501 JDA [0 / 1] MainWS-WriteThread     WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:43:44.806 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:43:44.979 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:43:44.984 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:44:13.224 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:44:13.315 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:44:13.750 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:44:13.752 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:44:14.887 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:44:15.362 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:44:15.570 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:44:15.731 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:44:15.734 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:47:06.733 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:47:06.911 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:47:07.426 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:47:07.432 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:47:08.639 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:47:09.211 JDA [0 / 1] MainWS-WriteThread     WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:47:09.581 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:47:09.609 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:47:09.613 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:51:01.676 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:51:01.759 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:51:02.249 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:51:02.256 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:51:03.176 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:51:03.747 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:51:03.901 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:51:04.184 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:51:04.187 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:52:08.081 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:52:08.196 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:52:08.654 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:52:08.661 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:52:09.707 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:52:10.456 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:52:11.436 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:52:15.492 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:52:15.494 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:54:20.287 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:54:20.904 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:54:21.808 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:54:21.816 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:54:23.058 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:54:23.545 JDA [0 / 1] MainWS-WriteThread     WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:54:23.785 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:54:23.979 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:54:23.983 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:56:54.666 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:56:54.764 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:56:55.280 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:56:55.287 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:56:56.160 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:56:57.472 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:56:57.701 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:56:57.975 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:56:57.989 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:57:07.700 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:57:07.782 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:57:08.255 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:57:08.257 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:57:09.459 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:57:10.056 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:57:10.216 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:57:10.411 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:57:10.413 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 13:59:14.487 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 13:59:14.580 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 13:59:15.249 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 13:59:15.255 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 13:59:16.139 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 13:59:16.669 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 13:59:16.833 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 13:59:17.172 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 13:59:17.175 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 14:02:03.090 main                               OrbitLauncher   INFO   Starting Orbit on Cluster 1 (Orbit)
+2025-12-19 14:02:03.187 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Starting...
+2025-12-19 14:02:03.718 main @coroutine#1                  HikariPool      INFO   HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b152928
+2025-12-19 14:02:03.723 main @coroutine#1                  HikariDataSourc INFO   HikariPool-1 - Start completed.
+2025-12-19 14:02:04.808 main @coroutine#1                  ShardManager    INFO   Login Successful!
+2025-12-19 14:02:06.064 JDA [0 / 1] MainWS-WriteThread     WebSocketClient INFO   Connected to WebSocket
+2025-12-19 14:02:06.277 main @coroutine#1                  CommandManager  INFO   2 commands registered on shard #0
+2025-12-19 14:02:06.539 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished Loading!
+2025-12-19 14:02:06.548 JDA [0 / 1] MainWS-ReadThread      InteractionsLis INFO   Shard #0 is ready!
+2025-12-19 14:10:14.121 JDA [0 / 1] MainWS-ReadThread      WebSocketClient WARN   Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2025-12-19 14:10:18.670 JDA [0 / 1] MainWS-ReadThread      WebSocketClient INFO   Connected to WebSocket
+2025-12-19 14:10:19.397 JDA [0 / 1] MainWS-ReadThread      JDA             INFO   Finished (Re)Loading!
+2025-12-19 14:10:24.293 HikariPool-1 housekeeper           HikariPool      WARN   HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m50s465ms296µs600ns).

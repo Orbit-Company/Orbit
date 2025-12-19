@@ -8,12 +8,13 @@ interface CommandDeclarationWrapper {
 
     fun slashCommand(
         name: String,
+        description: String = "No description provided",
         aliases: List<String> = emptyList(),
         block: CommandDeclarationBuilder.() -> Unit
     ): CommandDeclarationBuilder {
         return CommandDeclarationBuilder(
             name,
-            description = "placeholder",
+            description,
             aliases,
             integrationType = listOf(IntegrationType.GUILD_INSTALL),
             interactionContexts = listOf(InteractionContextType.GUILD)
