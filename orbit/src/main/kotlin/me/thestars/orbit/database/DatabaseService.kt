@@ -2,7 +2,14 @@ package me.thestars.orbit.database
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
+import me.thestars.orbit.database.table.Categories
+import me.thestars.orbit.database.table.ConnectionInvites
+import me.thestars.orbit.database.table.Connections
+import me.thestars.orbit.database.table.Guilds
+import me.thestars.orbit.database.table.ModerationRules
 import org.jetbrains.exposed.sql.Database
+import org.jetbrains.exposed.sql.SchemaUtils
+import org.jetbrains.exposed.sql.transactions.transaction
 
 data class PostgresConfig(
     val url: String,
@@ -24,6 +31,16 @@ class DatabaseService {
 
         hikari = HikariDataSource(config)
         Database.connect(hikari!!)
+
+        transaction {
+            SchemaUtils.createMissingTablesAndColumns(
+                Guilds,
+                Connections,
+                ConnectionInvites,
+                ModerationRules,
+                Categories
+            )
+        }
     }
 
     fun close() {

@@ -89,7 +89,7 @@ class ConnectionJoinExecutor : UnleashedCommandExecutor() {
             name = connectionName,
             guild = guildData,
             creatorId = context.user.idLong,
-            type = 1,
+            type = 2,
             channelId = targetChannel!!.idLong,
             language = (context.guild?.locale ?: "pt-br") as DiscordLocale,
             flags = combineFlags(

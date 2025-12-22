@@ -2,6 +2,7 @@ package me.thestars.orbit.interactions.vanilla.connections.declarations
 
 import me.thestars.orbit.interactions.commands.CommandDeclarationWrapper
 import me.thestars.orbit.interactions.vanilla.connections.ConnectionCreateExecutor
+import me.thestars.orbit.interactions.vanilla.connections.ConnectionInformationExecutor
 import me.thestars.orbit.interactions.vanilla.connections.ConnectionJoinExecutor
 import net.dv8tion.jda.api.interactions.IntegrationType
 import net.dv8tion.jda.api.interactions.InteractionContextType
@@ -21,6 +22,12 @@ class ConnectionsCommand : CommandDeclarationWrapper {
             addOption(opt(OptionType.CHANNEL, "channel", false), isSubCommand = true)
 
             executor = ConnectionJoinExecutor()
+        }
+
+        subCommand("info") {
+            addOption(opt(OptionType.STRING, "connection", false), isSubCommand = true)
+
+            executor = ConnectionInformationExecutor()
         }
     }
 }

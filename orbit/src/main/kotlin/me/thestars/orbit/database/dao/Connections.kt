@@ -14,21 +14,29 @@ class ConnectionsEntity(id: EntityID<UUID>) : UUIDEntity(id) {
     companion object : UUIDEntityClass<ConnectionsEntity>(me.thestars.orbit.database.table.Connections)
 
     var name by Connections.name
-    var icon by Connections.iconUrl
+    var iconUrl by Connections.iconUrl
     var description by Connections.description
     var invite by Connections.invite
-    var pauseAt by Connections.pauseAt
-    var lockedAt by Connections.lockedAt
-    var creatorId by Connections.creatorId
-    var createdAt by Connections.createdAt
     var type by Connections.type
-    var channelId by Connections.channelId
-    var logsChannelId by Connections.logsChannelId
-    var logsType by Connections.logsType
+    var language by Connections.language
+
+    var paused by Connections.paused
+    var pauseAt by Connections.pauseAt
+    var locked by Connections.locked
+    var lockedAt by Connections.lockedAt
+
+    var creatorId by Connections.creatorId
+    val guildCreatorId by Connections.guildCreatorId
+    var createdAt by Connections.createdAt
     var flags by Connections.flags
+
+    var channelId by Connections.channelId
+    var logsType by Connections.logsType
+    var logsChannelId by Connections.logsChannelId
+
     var messageComponentType by Connections.messageComponentType
     var guild by GuildsEntity referencedOn Connections.guild
-    var language by Connections.language
+
 
     val moderationRules by ModerationRule referrersOn ModerationRules.connection
 }

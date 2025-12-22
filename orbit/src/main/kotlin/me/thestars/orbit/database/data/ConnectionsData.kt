@@ -13,6 +13,22 @@ suspend fun ConnectionsEntity.Companion.FindByName(name: String, channelId: Long
     }
 }
 
+suspend fun ConnectionsEntity.Companion.FindConnectionsByChannel(channelId: Long): List<ConnectionsEntity> {
+    return newSuspendedTransaction {
+        ConnectionsEntity.find {
+            Connections.channelId eq channelId
+        }.toList()
+    }
+}
+
+suspend fun ConnectionsEntity.Companion.CountConnectionsByName(name: String): Long {
+    return newSuspendedTransaction {
+        ConnectionsEntity.find {
+            Connections.name eq name
+        }.count()
+    }
+}
+
 suspend fun ConnectionsEntity.Companion.ExistsConnection(name: String): ConnectionsEntity? {
     return newSuspendedTransaction {
         ConnectionsEntity.find { Connections.name eq name }.firstOrNull()

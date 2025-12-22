@@ -1,4 +1,6 @@
 commands:
+  error: "Infelizmente ocorreu erro ao executar o comando, minha equipe já está sabendo.\n\nCódigo de erro: {0}"
+
   command:
     orbit:
       name: "orbit"
@@ -22,3 +24,10 @@ commands:
           channel:
             name: "canal"
             description: "coloque o ID ou mencione o canal que você quer adicionar a conexão"
+      info:
+        name: "info"
+        description: "[Conexões] Veja informações de uma conexão ativa no canal atual."
+        options:
+          connection:
+            name: "conexao"
+            description: "coloque o nome da conexão conectada no canal que deseja ver as informações"

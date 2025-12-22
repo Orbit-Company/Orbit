@@ -36,7 +36,15 @@ object Enums {
     enum class ModType { Owner, Admin }
     enum class ModerationRuleType { EXACT_WORD, REGEX, WILDCARD }
     enum class ModerationAction { DELETE_MESSAGE, WARN_USER, TIMEOUT_USER }
-    enum class LogType { MessageDeleted, MessageEdited, MessageSuspect, MessageGrave, BlockedWord, MessageConfirmed, MessageRejected }
+    enum class LogType {
+        MessageDeleted,
+        MessageEdited,
+        MessageSuspect,
+        MessageGrave,
+        BlockedWord,
+        MessageConfirmed,
+        MessageRejected
+    }
     enum class CosmeticType { BANNER, BORDER, BADGE }
 }
 
@@ -60,10 +68,13 @@ enum class OrbitConnectionFlag(val value: Int) {
     EnableModeTosco(1 shl 17),
     CleanMessage(1 shl 18),
     UseComponentsV2(1 shl 19),
-    NameServerWebhook(1 shl 20);
+    NameServerWebhook(1 shl 20)
 }
 
 data object OrbitEmotes {
     const val error = "❌"
     const val success = "✅"
+    const val world = "<:world:1452473716155093015>"
+    const val crown = "<:crown:1452474988673237002>"
+    const val calendar = "<:calendar:1452475363363131403>"
 }

@@ -18,22 +18,17 @@ object Connections : UUIDTable("connections") {
     val lockedAt = long("locked_at").clientDefault { System.currentTimeMillis() }
 
     val creatorId = long("creator_id").nullable()
+    val guildCreatorId = long("guild_creator_id").nullable()
     val createdAt = long("created_at").clientDefault { System.currentTimeMillis() }
     val flags = integer("flags").default(0)
 
     val channelId = long("channel_id")
     val logsType = text("logs_type").default("[]")
-    val logsChannelId = long("logs_channel_id")
+    val logsChannelId = long("logs_channel_id").nullable()
 
     val messageComponentType = integer("message_component_type").default(1)
 
     val guild = reference("guild_id", Guilds, onDelete = ReferenceOption.CASCADE)
-
-    val embedTitle = varchar("embed_title", 255).nullable()
-    val embedDescription = text("embed_description").nullable()
-    val embedColor = varchar("embed_color", 20).nullable()
-    val webhookUsername = varchar("webhook_username", 80).nullable()
-    val webhookAvatar = varchar("webhook_avatar", 255).nullable()
 }
 
 object ConnectionInvites : UUIDTable("connection_invites") {
